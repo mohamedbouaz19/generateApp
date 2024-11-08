@@ -1,0 +1,16 @@
+
+.content{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Row{
+    display: flex;
+    gap: 10px;
+}
+.mat-raised-actions{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 20px;
+}

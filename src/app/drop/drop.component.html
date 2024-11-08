@@ -1,0 +1,58 @@
+<div class="mat-raised-title">
+    <h1>Class Form</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+<div class="mat-dialog-content" class="content">
+    
+<div class="Row">
+    <mat-form-field appearance="outline">
+        <mat-label>Class Name</mat-label>
+        <input matInput type="text" Attribute2="Name" formControlName="className">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Attribute1</mat-label>
+        <input matInput type="text" Attribute2="Attribute1" formControlName="attribute1">
+    </mat-form-field>
+
+</div>
+<div class="Row">
+    <mat-form-field appearance="outline">
+        <mat-label>Attribute2</mat-label>
+        <input matInput Attribute2="Attribute2" formControlName="attribute2">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Attribute3</mat-label>
+        <input matInput Attribute2="Attribute2" formControlName="attribute3">
+    </mat-form-field>
+
+</div>
+<div class="Row">
+    <mat-form-field appearance="outline">
+        <mat-label>Function1</mat-label>
+        <input matInput type="text" Attribute2="Function1" formControlName="function1">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Function2</mat-label>
+        <input matInput Attribute2="Function2" formControlName="function2">
+    </mat-form-field>
+
+</div>
+<div class="Row">
+<mat-form-field appearance="outline">
+<mat-label>Type Class</mat-label>
+<mat-select formControlName="typeClass" >
+    <mat-option *ngFor="let val of education "[value]="val">{{val}}
+    </mat-option>
+</mat-select>
+</mat-form-field>
+
+</div>
+
+
+</div>
+<div class="mat-raised-actions"mat-dialog-actions class="action">
+    <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+    <button mat-raised-button color="warn" type="button" [mat-dialog-close]="false">Cancel</button>
+    
+</div>
+</form>

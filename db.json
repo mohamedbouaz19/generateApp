@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode",
+      "views": 100
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "a comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "class": [
+    {
+      "className": "azzzuzzzzzzzzzzzzzzzz",
+      "attribute1": "",
+      "attribute2": "",
+      "attribute3": "",
+      "function1": "",
+      "function2": "",
+      "typeClass": "",
+      "id": "da42"
+    }
+  ]
+}
